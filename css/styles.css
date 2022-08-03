@@ -1,0 +1,178 @@
+/* FONTS */
+
+@font-face {
+    font-family: Khula;
+    src: url('https://fonts.googleapis.com/css2?family=Khula:wght@600;700&display=swap');
+}
+
+@font-face {
+    font-family: Ravensara;
+    src: url(../fonts/RavensaraSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Princeps;
+    src: url(../fonts/OptimusPrinceps.ttf);
+}
+
+@font-face {
+    font-family: Styles;
+    src: url(../fonts/AngerStyles.ttf);
+}
+
+/* Nav and hero layout */
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: #dfdfdf;
+}
+
+.navbar {
+    background-color: #dfdfdf !important;
+    margin-left: 64px;
+    margin-right: 64px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.navbar-menu {
+    flex-grow: initial !important;
+    flex-shrink: initial !important;
+}
+
+
+.navbtn {
+    color: rgb(27, 15, 15) !important;
+    font-family: "Ravensara", sans-serif;
+    font-size: 15px;
+    margin-left: 110px;
+    margin-right: 110px;
+    letter-spacing: 1.4px;
+    font-weight: 600;
+    opacity: 0.70;
+}
+
+.navbtn:hover {
+    background-color: #dfdfdf !important ;
+    opacity:1;
+}
+
+#navbar {  
+    top: -70px;
+    transition: top 0.3s;
+}
+
+.hero {
+    background-image: url(../img/parallax.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#subtitle {
+    color: white;
+    font-family: "Ravensara";
+    font-weight: 700 !important;
+    font-size: 12px !important;
+}
+
+/* Section layout and styles */
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+.section {
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #dfdfdf !important;
+    font-family: "Styles" !important;
+    font-size: 30px !important;
+    letter-spacing: 1.2px;
+    font-weight: 600 !important;
+}
+
+h3 {
+    color: #930a08 !important;
+    font-family: "Styles";
+    letter-spacing: 1.6px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#artistsblock {
+    background-color: #930a08;
+}
+
+#midblock {
+    background-color: #0e6d69;
+}
+
+#artisttext {
+    color: #dfdfdf !important;
+    font-family: "Ravensara";
+    font-weight: 700 !important;
+}
+
+#darkTitle {
+    color: #930a08;
+    font-family: "Khula" !important;
+    font-size: 35px !important;
+    font-weight: 600;
+    letter-spacing: -1.3px;
+}
+
+#lightTitle {
+    color: #dfdfdf !important;
+    font-family: "Khula";
+    font-weight: 600 !important;
+    font-size: 30px !important;
+    letter-spacing: -1.3px;
+}
+
+#lightTitle2 {
+    color: #dfdfdf !important;
+    font-family: "Khula";
+    font-weight: 600 !important;
+    font-size: 30px !important;
+    letter-spacing: -1.3px;
+    margin-bottom: 30px;
+}
+
+#smalltext {
+    color: #930a08 !important;
+    font-family: "Ravensara";
+    font-size: 18px;
+    font-weight: 500 !important;
+}
+
+#redbtn {
+    color: #930a08 !important;
+    font-family: "Styles";
+    font-weight: 700 !important;
+}
+
+/* Footer */
+
+#footLinks {
+    color: #0e6d69 !important;
+}
+
+#footspace {
+    margin: 0 auto;
+    margin-left: 150px;
+    margin-right: 150px;
+}
