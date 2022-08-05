@@ -17,11 +17,11 @@
   <title>SKULLBOX</title>
 </head>
 
-<body class="container is-fluid">
+<body>
 
-  <div class="container is-widescreen">
-    <div class="hero-head">
-      <div class="container is-widescreen"></div>
+
+  <div class="hero-head">
+    <div class="container is-widescreen">
       <nav class="navbar is-black is-fixed-top" id="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
@@ -32,36 +32,35 @@
           </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu" >
+        <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item navbtn">
+            <a class="navbar-item navbtn" href="#about">
               ABOUT
             </a>
 
-            <a class="navbar-item navbtn">
+            <a class="navbar-item navbtn" href="#artists">
               WORK
             </a>
-
           </div>
 
-          <div class="navbar-item navbtn" href="">
+          <div class="navbar-item navbtn">
             <img src="img/sb logo.jpg.png">
           </div>
 
           <div class="navbar-end">
-            <a class="navbar-item navbtn">
+            <a class="navbar-item navbtn" href="#midblock">
               STUDIO
             </a>
 
-            <a class="navbar-item navbtn">
+            <a class="navbar-item navbtn" href="#contact">
               CONTACT
             </a>
           </div>
         </div>
       </nav>
-      </div>
     </div>
   </div>
+
 
 
 
@@ -87,9 +86,10 @@
 
   <div id="down"></div>
 
-  <section class="section">
+  <section class="section" id="about">
 
     <div class="container is-widescreen">
+
 
       <article class="media">
         <div class="media-content has-text-centered">
@@ -122,6 +122,7 @@
   </section>
 
   <section class="section" id="artistsblock">
+    <div id="artists"></div>
 
     <div class="container has-text-centered reveal">
 
@@ -206,12 +207,12 @@
     <div class="container is-widescreen">
 
       <div class="columns">
-        <div class="column is-narrow is-offset-1">
-          <div style="width: 600px;">
+        <div class="column is-narrow is-offset-3">
+          <div >
             <h4 id="lightTitle">Map To Our Shop</h4>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13261.67885841875!2d18.4937443!3d-33.8014803!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5361ee640ade3ff8!2sSkullBox%20%26%20Tattoo%20Company!5e0!3m2!1sen!2sza!4v1659453517485!5m2!1sen!2sza"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              width="330" height="350" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
@@ -244,6 +245,7 @@
   </section>
 
   <section class="section" id="artistsblock">
+    <div id="contact"></div>
 
     <div class="container is-widescreen">
 
@@ -254,6 +256,7 @@
             <strong id="artisttext">GIVE US A CALL:</strong>
             <br>
             (cell) 072 403 3071
+            (whatsapp) 079 069 4007
             <br>
             <strong id="artisttext">SEND AN EMAIL:</strong>
             <br>
@@ -307,7 +310,7 @@
       <div class="columns is-vcentered has-text-centered">
         <div class="column is-1">
           <span class="icon is-medium">
-            <a href="">
+            <a href="https://www.facebook.com/Skullboxtattoo">
               <span class="fa-stack fa-sm" id="footLinks">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fa-brands fa-facebook 
@@ -316,7 +319,7 @@
             </a>
           </span>
           <span class="icon is-medium">
-            <a href="">
+            <a href="https://www.instagram.com/skullbox_tattoocompany/">
               <span class="fa-stack fa-sm" id="footLinks">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fa-brands fa-instagram
@@ -350,8 +353,10 @@
 
 <script>
   // When the user scrolls down 20px from the top of the document, slide down the navbar
-  window.onscroll = function() {scrollFunction()};
-  
+  window.onscroll = function () {
+    scrollFunction()
+  };
+
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById("navbar").style.top = "0";
@@ -361,21 +366,21 @@
   }
 
   function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
     }
   }
-}
 
-window.addEventListener("scroll", reveal);
-  </script>
+  window.addEventListener("scroll", reveal);
+</script>
 
 
 </html>
