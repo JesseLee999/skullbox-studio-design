@@ -24,16 +24,14 @@
 
 html {
     scroll-behavior: smooth;
-
 }
 
 body {
-    background-color: #dfdfdf;
+    background-color: #dfdfdf !important;
 }
 
 .navbar {
     background-color: #dfdfdf !important;
-  
     display: flex;
     align-content: center;
     justify-content: center;
