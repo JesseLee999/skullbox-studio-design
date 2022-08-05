@@ -44,6 +44,7 @@ body {
 
 
 .navbtn {
+    background-color: #dfdfdf !important ;
     color: rgb(27, 15, 15) !important;
     font-family: "Ravensara", sans-serif;
     font-size: 15px;
@@ -107,7 +108,7 @@ h3 {
     color: #930a08 !important;
     font-family: "Styles";
     letter-spacing: 1.6px;
-    font-size: px;
+    font-size: 30px !important;
     font-weight: 400;
 }
 
